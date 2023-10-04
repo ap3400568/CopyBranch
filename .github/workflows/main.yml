@@ -13,16 +13,17 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2  # Checkout the repository
 
-       - name: Create New Branch
+      
+          
+      - name: Copy Files
         run: |
-          # Create a new branch locally
+
+         # Create a new branch locally
           git checkout -b alpha
 
           # Push the new branch to GitHub
           git push origin alpha
           
-      - name: Copy Files
-        run: |
           # Switch to the destination branch where you want to copy files
           git checkout alpha  # Replace with the destination branch name
           
