@@ -21,10 +21,6 @@ jobs:
           # Copy files from the source branch to the destination branch
           git checkout main -- CopyFile CopyFile  # Replace with the actual file paths
 
-          # Stage and commit the changes
-          git add CopyFile CopyFile
-          git commit -m "Copy files from source branch"
-          
-          # Push the changes to the destination branch
+         
         
 
