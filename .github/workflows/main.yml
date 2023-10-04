@@ -5,9 +5,9 @@ on:
     branches:
       - main  # Replace with the source branch name
 permissions:
-  pull-requests: write
+  pull-requests: write/read
   issues: write
-  repository-projects: write
+  repository-projects: write/read
 jobs:
   copy_files_job:
     runs-on: ubuntu-latest
