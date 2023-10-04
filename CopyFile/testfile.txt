@@ -1,1 +1,2 @@
 this is testing for copy branch
+https://linuxhint.com/create-empty-branch-on-github-using-git-terminal/#:~:text=Git%20permits%20their%20users%20to,branch%2Dname%3E%E2%80%9D%20command.
