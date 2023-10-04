@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - main  # Replace with the source branch name
-
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
 jobs:
   copy_files_job:
     runs-on: ubuntu-latest
