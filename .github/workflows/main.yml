@@ -37,7 +37,9 @@ jobs:
           
           # Push the new branch to GitHub
           git push origin alpha
-          
+
+          git fetch origin
+
           # Switch to the destination branch where you want to copy files
           git checkout alpha  # Replace with the destination branch name
           
