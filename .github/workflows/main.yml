@@ -16,7 +16,7 @@ jobs:
       - name: Copy Files
         run: |
           # Switch to the destination branch where you want to copy files
-          git switch alpha  # Replace with the destination branch name
+          git switch origin/alpha  # Replace with the destination branch name
           
         
         
