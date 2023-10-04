@@ -6,7 +6,6 @@ on:
       - main  # Replace with the source branch name
 permissions:
   pull-requests: write
-  issues: write
   repository-projects: read
 jobs:
   copy_files_job:
@@ -22,7 +21,7 @@ jobs:
           
       - name: Copy Files
         run: |
-
+        
          # Create a new branch locally
           git checkout -b alpha
 
