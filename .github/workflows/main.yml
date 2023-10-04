@@ -27,11 +27,7 @@ jobs:
           git config --global user.email "ap3400568@gmail.com"
           git config --global user.name "ap3400568" 
   
-         # Create a new branch locally
-          git checkout -b alpha
-
-          # Push the new branch to GitHub
-          git push origin alpha
+        
           
           # Switch to the destination branch where you want to copy files
           git checkout alpha  # Replace with the destination branch name
