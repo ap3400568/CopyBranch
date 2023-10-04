@@ -26,5 +26,5 @@ jobs:
           git commit -m "Copy files from source branch"
           
           # Push the changes to the destination branch
-          git push origin alpha
+        
 
