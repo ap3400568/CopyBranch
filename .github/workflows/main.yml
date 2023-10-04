@@ -22,7 +22,11 @@ jobs:
           
       - name: Copy Files
         run: |
-        
+
+         # Login a new branch locally
+          git config --global user.email "ap3400568@gmail.com"
+          git config --global user.name "ap3400568" 
+  
          # Create a new branch locally
           git checkout -b alpha
 
