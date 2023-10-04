@@ -1,0 +1,30 @@
+name: Copy Files to Another Branch
+
+on:
+  push:
+    branches:
+      - main  # Replace with the source branch name
+
+jobs:
+  copy_files_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2  # Checkout the repository
+      
+      - name: Copy Files
+        run: |
+          # Switch to the destination branch where you want to copy files
+          git checkout alpha  # Replace with the destination branch name
+          
+          # Copy files from the source branch to the destination branch
+          git checkout main -- CopyFile CopyFile  # Replace with the actual file paths
+
+          # Stage and commit the changes
+          git add CopyFile CopyFile
+          git commit -m "Copy files from source branch"
+          
+          # Push the changes to the destination branch
+          git push origin alpha
+
