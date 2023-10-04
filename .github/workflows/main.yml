@@ -18,9 +18,6 @@ jobs:
           # Switch to the destination branch where you want to copy files
           git checkout alpha  # Replace with the destination branch name
           
-          # Copy files from the source branch to the destination branch
-          git checkout main -- CopyFile CopyFile  # Replace with the actual file paths
-
-         
+        
         
 
