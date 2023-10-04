@@ -32,7 +32,9 @@ jobs:
           git checkout -b alpha
 
           # Create a new branch locally
-          git pull 
+          git pull origin alpha
+
+          
           # Push the new branch to GitHub
           git push origin alpha
           
