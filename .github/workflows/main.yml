@@ -6,6 +6,7 @@ on:
       - main  # Replace with the source branch name
 permissions:
   pull-requests: write
+  contents: write
   repository-projects: read
 jobs:
   copy_files_job:
