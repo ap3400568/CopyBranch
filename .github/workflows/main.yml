@@ -29,19 +29,19 @@ jobs:
   
         
            # Create a new branch locally
-          git checkout -b alpha
+          git checkout -b alpha1
 
           # Create a new branch locally
-          git pull origin alpha
+          git pull origin alpha1
 
           
           # Push the new branch to GitHub
-          git push origin alpha
+          git push origin alpha1
 
           git fetch origin
 
           # Switch to the destination branch where you want to copy files
-          git checkout alpha  # Replace with the destination branch name
+          git checkout alpha1  # Replace with the destination branch name
           
           # Copy files from the source branch to the destination branch
           git checkout main -- CopyFile CopyFile  # Replace with the actual file paths
@@ -51,6 +51,6 @@ jobs:
           git commit -m "Copy files from source branch"
           
           # Push the changes to the destination branch
-            git push origin alpha         
+            git push origin alpha1         
         
 
